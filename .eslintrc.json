@@ -1,8 +1,9 @@
-
 {
-  "extends": ["next/core-web-vitals", "next/typescript", "next"],
+  "extends": ["next", "next/core-web-vitals", "plugin:@typescript-eslint/recommended", "next/typescript"],
   "rules": {
-    "react/no-unescaped-entities": "off",
-    "@next/next/no-page-custom-font": "off"
+    "@typescript-eslint/no-explicit-any": "warn", // Allow any type for now, warning instead of error
+    "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }], // Allow unused vars with underscore
+    "prefer-const": "warn", // Warn when let can be replaced by const
+    "react-hooks/exhaustive-deps": "off" // Disable exhaustive deps warning for useEffect
   }
 }
