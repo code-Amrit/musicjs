@@ -3,7 +3,6 @@
 import { BackgroundGradient } from "./ui/background-gradient";
 import courseData from "../data/music_courses.json";
 import Link from "next/link";
-import { p } from "framer-motion/client";
 
 
 // let username: string = "John Doe";
